@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'InterBold';
+    src: url('../fonts/Inter-Bold.otf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'InterMedium';
+    src: url('../fonts/Inter-Medium.otf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'InterRegular';
+    src: url('../fonts/Inter-Regular.otf');
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+html,
+body {
+    overflow-x: hidden;
+}
+body {
+    font-family: 'InterRegular', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+}
+img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>loading</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/loading-style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="container">
+    <div class="coin-container">
+        <div class="coin-background"></div>
+        <img src="img/coin.png" alt="coin" class="coin">
+    </div>
+    <div class="loading-bar">
+        <div class="percentage" id="percentage">0%</div>
+        <div class="progress"></div>
+    </div>
+</div>
+
+<script>
+    window.onload = function() {
+        let progress = document.querySelector('.progress');
+        let coin = document.querySelector('.coin');
+        let coinBackground = document.querySelector('.coin-background');
+        let percentage = document.querySelector('.percentage');
+
+        const originalSize = 82;
+        const targetSizeCoin = 231;
+        // const targetSizeBackground = 344;
+        const animationDuration = 5000; // 5 секунд
+
+        setTimeout(() => {
+            progress.style.width = '100%';
+
+            let startTime = null;
+
+            function animateSize(timestamp) {
+                if (!startTime) startTime = timestamp;
+                const elapsed = timestamp - startTime;
+
+                // Рассчитываем текущий размер
+                const currentSizeCoin = originalSize + (targetSizeCoin - originalSize) * (elapsed / animationDuration);
+                // const currentSizeBackground = originalSize + (targetSizeBackground - originalSize) * (elapsed / animationDuration);
+
+                // Обновляем размеры монеты и фона
+                coin.style.width = `${currentSizeCoin}px`;
+                coin.style.height = `${currentSizeCoin}px`;
+                // coinBackground.style.width = `${currentSizeBackground}px`;
+                // coinBackground.style.height = `${currentSizeBackground}px`;
+                // coinBackground.style.backgroundSize = `${currentSizeBackground}px ${currentSizeBackground}px`;
+
+                if (elapsed < animationDuration) {
+                    requestAnimationFrame(animateSize);
+                } else {
+                    // Обеспечиваем точные конечные размеры
+                    coin.style.width = `${targetSizeCoin}px`;
+                    coin.style.height = `${targetSizeCoin}px`;
+                    // coinBackground.style.width = `${targetSizeBackground}px`;
+                    // coinBackground.style.height = `${targetSizeBackground}px`;
+                    // coinBackground.style.backgroundSize = `${targetSizeBackground}px ${targetSizeBackground}px`;
+                }
+            }
+
+            requestAnimationFrame(animateSize);
+
+            // Анимация изменения числа
+            let counter = 0;
+            let interval = setInterval(() => {
+                if (counter < 100) {
+                    counter++;
+                    percentage.textContent = counter + '%';
+                } else {
+                    clearInterval(interval);
+                }
+            }, 50);
+        }, 100);
+    };
+
+</script>
+</body>
+</html>
