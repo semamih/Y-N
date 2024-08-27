@@ -35,6 +35,7 @@ body{
     top: calc(50% - 82px);
     transform: translate( calc(-50% + 41px) , calc(-50% + 61.5px));
     display: flex;
+    border-radius: 50%;
 }
 .coin-background {
     border-radius: 50%;
