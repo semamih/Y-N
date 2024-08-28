@@ -16,6 +16,17 @@
     font-weight: 400;
 }
 
+@font-face {
+    font-family: 'SF Pro Text';
+    src: url('../fonts/SFProText-Regular.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'SF Pro Text Medium';
+    src: url('../fonts/SFProText-Medium.ttf');
+    font-weight: 500;
+}
+
 * {
     margin: 0;
     padding: 0;

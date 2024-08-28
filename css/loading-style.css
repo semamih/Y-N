@@ -30,6 +30,7 @@ body{
     height: 82px;
 }
 .coin-container{
+    border-radius: 50%;
     position: absolute;
     left: calc(50% - 41px);
     top: calc(50% - 82px);
