@@ -1,0 +1,157 @@
+body{
+    background: url("../img/bg-light-glow.png") no-repeat center/cover;
+    margin: 0;
+}
+.screen {
+    padding: 14px 16px 24px 16px;
+    height: 100%;
+    margin-bottom: 20px;
+}
+.nav-menu-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.nav-menu-items{
+    box-sizing: border-box;
+    height: 49px;
+    padding-top: 4.5px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 50px;
+}
+.nav-menu-item-title{
+    font-family: 'InterRegular',sans-serif;
+    font-size: 10px;
+    color: #fff;
+}
+.menu-item-active svg path{
+    stroke: #9C59CC;
+}
+.menu-item-active .nav-menu-item-title{
+    color: #9C59CC;
+}
+.friends-title{
+    font-family: 'InterBold',sans-serif;
+    font-size: 28px;
+    text-align: center;
+}
+.friends-text{
+    font-family: 'InterRegular',sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 14px;
+}
+.total-referral{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'InterBold',sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-bottom: 14px;
+}
+.total-money {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    padding: 10px 14px;
+    width: 152px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.14);
+    border-radius: 50px;
+    max-width: 348px;
+
+    font-family: 'InterBold',sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+.yourf{
+    font-family: 'InterBold',sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+.friend-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 10px;
+    width: 100%;
+    height: 68px;
+    background: rgba(255, 255, 255, 0.14);
+    backdrop-filter: blur(25px);
+    border-radius: 16px;
+}
+.fried-info{
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+
+    font-family: 'InterBold',sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+.plus-money{
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+
+    font-family: 'InterBold',sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+.friends-items{
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+.friends-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 16px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 60px;
+    background: radial-gradient(50% 689.8% at 50% 45.3%, #000000 0%, #5F2DCA 100%);
+    backdrop-filter: blur(40px);
+    border-radius: 50px;
+    margin-bottom: 24px;
+}
+
+.link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 16px;
+    width: 100%;
+    height: 60px;
+    box-sizing: border-box;
+    background: #000000;
+    border: 1.5px solid rgba(255, 255, 255, 0.17);
+    backdrop-filter: blur(40px);
+    border-radius: 50px;
+    margin-bottom: 14px;
+    margin-top: -80px;
+}
+
+
+
+
+
+
+
+
+
+
