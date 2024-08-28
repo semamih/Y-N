@@ -48,10 +48,6 @@ body{
     color: #FFFFFF;
     margin-bottom: 24px;
 }
-.wal-selects{
-    height: 193px;
-    margin-bottom: 40px;
-}
 .wal-connected-title{
     display: flex;
     align-items: center;
@@ -62,7 +58,7 @@ body{
     font-size: 20px;
     color: #9C59CC;
     margin-bottom: 24px;
-    margin-top: 24px;
+    margin-top: 40px;
 }
 .wal-connected-actions{
     display: flex;
@@ -109,11 +105,11 @@ body{
     font-size: 14px;
     color: #FFFFFF;
 
+    margin-left: -10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
-    column-gap: 30px;
     row-gap: 17.5px;
     margin-bottom: 24px;
 }
@@ -221,7 +217,63 @@ body{
     margin-bottom: 24px;
 }
 
+.wal-selects{
+    margin-bottom: 40px;
+    font-family: 'InterRegular',sans-serif;
+    font-size: 14px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+.wal-selects-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 16px;
+    width: 358px;
+    height: 60px;
+    background: #000000;
+    border: 1.5px solid #3A3A3A;
+    backdrop-filter: blur(40px);
+    border-radius: 50px;
 
+    font-family: 'SF Pro Text Medium',sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+.custom-select {
+    display: flex;
+    align-items: center;
+    padding: 18px 16px;
+
+    width: 175px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.14);
+    backdrop-filter: blur(40px);
+    border-radius: 50px;
+    border: none;
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
+
+    font-family: 'SF Pro Text Medium',sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+.custom-select option {
+    background-color: #1a1836;
+    color: white;
+}
 
 
 
