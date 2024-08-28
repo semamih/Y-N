@@ -1,0 +1,134 @@
+body{
+    background: url("../img/bg-light-glow.png") no-repeat center/cover;
+    margin: 0;
+}
+.screen {
+    padding: 24px 16px 24px 16px;
+    height: 100%;
+    position: relative;
+}
+.close{
+    position: absolute;
+    top: 24px;
+    right: 16px;
+}
+.nav-menu-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.nav-menu-items{
+    box-sizing: border-box;
+    height: 49px;
+    padding-top: 4.5px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 50px;
+}
+.nav-menu-item-title{
+    font-family: 'InterRegular',sans-serif;
+    font-size: 10px;
+    color: #fff;
+}
+.menu-item-active svg path{
+    stroke: #9C59CC;
+}
+.menu-item-active .nav-menu-item-title{
+    color: #9C59CC;
+}
+.done-coins-title{
+    margin-top: 76px;
+    margin-bottom: 100px;
+    text-align: center;
+
+    font-family: 'InterBold',sans-serif;
+    font-size: 34px;
+    color: #FFFFFF;
+}
+.money{
+    margin: 0 auto;
+    box-sizing: border-box;
+    background: #FFFFFF24;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 4px;
+    padding: 10px 14px 10px 14px;
+    width: 154px;
+    height: 50px;
+    border-radius: 50px;
+
+    font-family: 'InterRegular',sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-bottom: 11px;
+}
+.money-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.money-plus{
+    margin-top: -30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'InterBold',sans-serif;
+    font-size: 34px;
+    color: #FFFFFF;
+    margin-bottom: 100px;
+}
+.money-plus-rep{
+    margin-top: 0;
+    margin-bottom: 114px;
+}
+.done-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 16px;
+    gap: 4px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 60px;
+    background: radial-gradient(50% 689.8% at 50% 45.3%, #000000 0%, #5F2DCA 100%);
+    backdrop-filter: blur(40px);
+    border-radius: 50px;
+
+    font-family: 'SF Pro Text',sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+.big-green{
+    font-family: 'InterBold',sans-serif;
+    color: #03FF65;
+}
+.fz-14{
+    font-size: 14px;
+}
+.fz-20 {
+    font-size: 20px;
+}
+.fz-24{
+    font-size: 24px;
+}
+.fz-34{
+    font-size: 34px;
+}
+.money-rep{
+    margin-bottom: 0;
+}
+.money-container-rep{
+    margin-top: -10px;
+}
+.done-rep-title{
+    margin-bottom: 114px;
+}

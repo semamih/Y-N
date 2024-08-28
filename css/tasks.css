@@ -43,7 +43,6 @@ body{
     font-size: 28px;
     color: #FFFFFF;
     margin-bottom: 14px;
-    text-align: center;
 }
 .tasks-title-h2{
     font-family: 'InterBold',sans-serif;
@@ -129,6 +128,13 @@ body{
 .tasks-rep{
     font-family: 'InterRegular',sans-serif;
     font-size: 16px;
+    display: flex;
+    align-items: center;
+    column-gap: 2px;
+}
+.tasks-rep img{
+    width: 30px;
+    height: 30px;
 }
 .big-green{
     color: #03FF65;
@@ -136,9 +142,12 @@ body{
 }
 .tasks-content{
     margin-left: 10px;
-    margin-right: 53px;
+    width: 200px;
+    margin-right: 48px;
 }
+.tasks-item{
 
+}
 .tasks-items-completed{
     display: none;
 }

@@ -2,46 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Main</title>
+    <title>Task inner</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/task-inner.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-
-<div class="screen">
-    <div class="main-level">
-        <div class="main-level-info">
-            <div class="main-level-info-rep">REP: 12</div>
-            <div class="main-level-info-next">Next level: 45 / 200 points of REP</div>
+    <div class="screen">
+        <div class="close" onclick="window.location.href = './tasks.html'">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.75 11.25L11.25 18.75M11.25 11.25L18.75 18.75M27.5 15C27.5 21.9036 21.9036 27.5 15 27.5C8.09644 27.5 2.5 21.9036 2.5 15C2.5 8.09644 8.09644 2.5 15 2.5C21.9036 2.5 27.5 8.09644 27.5 15Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
         </div>
-        <div class="main-info-bar">
-            <div class="main-info-line"></div>
+        <div class="task-inner-img">
+            <img src="img/youtube.svg" alt="">
         </div>
-        <div class="coinsCount">
+        <h2 class="task-inner-title">Watch the video </h2>
+        <p class="task-inner-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div class="task-inner-money">
             <img src="img/coin3.png" alt="">
-            <div class="count">100000</div>
-            <div class="coinsCount-button">Upgrade</div>
+            <div class="task-inner-money-count">+ 120 000</div>
         </div>
+        <div class="task-inner-button-go" onclick="window.location.href = './task-inner-check.html'">Go</div>
+        <div class="task-inner-button-check">
+            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 16.333C2 13.5046 2 12.0904 2.87868 11.2117C3.75736 10.333 5.17157 10.333 8 10.333H16C18.8284 10.333 20.2426 10.333 21.1213 11.2117C22 12.0904 22 13.5046 22 16.333C22 19.1614 22 20.5756 21.1213 21.4543C20.2426 22.333 18.8284 22.333 16 22.333H8C5.17157 22.333 3.75736 22.333 2.87868 21.4543C2 20.5756 2 19.1614 2 16.333Z" stroke="white" stroke-width="1.5"/>
+                <path d="M12 18.333C13.1046 18.333 14 17.4376 14 16.333C14 15.2284 13.1046 14.333 12 14.333C10.8954 14.333 10 15.2284 10 16.333C10 17.4376 10.8954 18.333 12 18.333Z" stroke="white" stroke-width="1.5"/>
+                <path d="M6 10.333V8.33301C6 5.0193 8.68629 2.33301 12 2.33301C15.3137 2.33301 18 5.0193 18 8.33301V10.333" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            Check</div>
     </div>
-    <div class="farming">
-        <div class="farming-line"></div>
-        <div class="farming-reward">
-            <img src="img/coin4.png" alt="">
-            <div class="farming-reward-count">+ 61.01</div>
-        </div>
-        <p class="farming-text">
-            Farming...
-        </p>
-        <p class="farming-hour">
-            4:32h
-        </p>
-        <img src="img/1.png" alt="" class="farming-img">
-    </div>
-
     <div class="nav-menu-items">
-        <div class="nav-menu-item menu-item-active">
-            <div class="nav-menu-item-icon icon-hero">
+        <div class="nav-menu-item">
+            <div class="nav-menu-item-icon icon-hero" onclick="window.location.href = './main.html'">
                 <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M3 15.2549C3 12.3944 3 10.9641 3.649 9.77843C4.298 8.59276 5.48369 7.85689 7.85504 6.38516L10.355 4.83359C12.8617 3.27786 14.1151 2.5 15.5 2.5C16.8849 2.5 18.1382 3.27786 20.645 4.83359L23.145 6.38515C25.5164 7.85689 26.702 8.59276 27.351 9.77843C28 10.9641 28 12.3944 28 15.2549V17.1563C28 22.0323 28 24.4704 26.5355 25.9851C25.0711 27.5 22.714 27.5 18 27.5H13C8.28595 27.5 5.92894 27.5 4.46446 25.9851C3 24.4704 3 22.0323 3 17.1563V15.2549Z" stroke="white" stroke-width="1.5"/>
                     <path d="M19.25 22.5H11.75" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
@@ -62,7 +55,7 @@
             </div>
             <div class="nav-menu-item-title">Upgrade</div>
         </div>
-        <div class="nav-menu-item" onclick="window.location.href = './tasks.html'">
+        <div class="nav-menu-item menu-item-active" onclick="window.location.href = './tasks.html'">
             <div class="nav-menu-item-icon icon-tasks" ><svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M18.0046 5H12.9954C8.27261 5 5.91124 5 4.44407 6.46446C3.34577 7.56072 3.06963 9.15715 3.0002 11.8681C2.9913 12.2156 3.27652 12.4933 3.61345 12.5815C4.68843 12.8626 5.48152 13.8389 5.48152 15C5.48152 16.1611 4.68843 17.1374 3.61345 17.4185C3.27652 17.5066 2.9913 17.7844 3.0002 18.132C3.06963 20.8429 3.34577 22.4392 4.44407 23.5355C5.91124 25 8.27261 25 12.9954 25H18.0046C22.7274 25 25.0888 25 26.556 23.5355C27.6543 22.4392 27.9304 20.8429 27.9997 18.132C28.0087 17.7844 27.7235 17.5066 27.3865 17.4185C26.3116 17.1374 25.5185 16.1611 25.5185 15C25.5185 13.8389 26.3116 12.8626 27.3865 12.5815C27.7235 12.4933 28.0087 12.2156 27.9997 11.8681C27.9304 9.15715 27.6543 7.56072 26.556 6.46446C25.0888 5 22.7274 5 18.0046 5Z" stroke="white" stroke-width="1.5"/>
                 <path d="M14.4324 12.5281C14.9074 11.6761 15.1449 11.25 15.5 11.25C15.8551 11.25 16.0926 11.6761 16.5676 12.5281L16.6905 12.7486C16.8254 12.9908 16.8929 13.1117 16.9981 13.1916C17.1034 13.2715 17.2344 13.3013 17.4965 13.3605L17.7351 13.4145C18.6575 13.6232 19.1187 13.7275 19.2285 14.0804C19.3382 14.4333 19.0237 14.8009 18.395 15.5362L18.2322 15.7265C18.0536 15.9354 17.9642 16.0399 17.924 16.1691C17.8839 16.2984 17.8974 16.4377 17.9244 16.7166L17.949 16.9704C18.044 17.9515 18.0916 18.442 17.8044 18.6601C17.517 18.8781 17.0852 18.6794 16.2216 18.2817L15.9982 18.1789C15.7527 18.0659 15.6301 18.0094 15.5 18.0094C15.3699 18.0094 15.2472 18.0659 15.0017 18.1789L14.7784 18.2817C13.9147 18.6794 13.483 18.8781 13.1956 18.6601C12.9084 18.442 12.9559 17.9515 13.051 16.9704L13.0756 16.7166C13.1026 16.4377 13.1161 16.2984 13.076 16.1691C13.0357 16.0399 12.9464 15.9354 12.7677 15.7265L12.605 15.5362C11.9762 14.8009 11.6618 14.4333 11.7715 14.0804C11.8813 13.7275 12.3424 13.6232 13.2649 13.4145L13.5035 13.3605C13.7656 13.3013 13.8966 13.2715 14.0019 13.1916C14.1071 13.1117 14.1746 12.9908 14.3095 12.7486L14.4324 12.5281Z" stroke="white" stroke-width="1.5"/>
@@ -90,9 +83,5 @@
             <div class="nav-menu-item-title">wallet</div>
         </div>
     </div>
-</div>
-
-
-
 </body>
 </html>

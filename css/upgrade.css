@@ -71,7 +71,7 @@ body{
     height: 30px;
 }
 .coin-count-text{
-    font-family: 'InterBold',sans-serif;
+    font-family: 'InterMedium',sans-serif;
     font-size: 20px;
     color: #FFFFFF;
 }
@@ -150,7 +150,7 @@ body{
     width: 145px;
     height: 50px;
     border-radius: 50px;
-    padding: 13px 23px;
+    padding: 13px 21px;
 }
 .vip-item-cost{
     margin-top: 38px;
@@ -254,8 +254,9 @@ body{
 .vip-items{
     display: none;
 }
-
-
+.bold{
+    font-family: "InterBold",sans-serif;
+}
 
 
 
