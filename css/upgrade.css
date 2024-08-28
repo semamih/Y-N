@@ -2,6 +2,10 @@ body{
     background: url("../img/bg-light-glow.png") no-repeat center/cover;
     margin: 0;
 }
+.bg-2{
+    background: linear-gradient(180deg, #5F2DCA 0%, #000000 90.6%);
+
+}
 .screen {
     padding: 14px 0 24px 0;
     height: 100%;
