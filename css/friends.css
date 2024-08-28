@@ -115,6 +115,7 @@ body{
     display: flex;
     flex-direction: column;
     row-gap: 8px;
+    margin-bottom: 80px;
 }
 .friends-button{
     display: flex;
@@ -122,28 +123,31 @@ body{
     align-items: center;
     padding: 18px 16px;
     box-sizing: border-box;
-    width: 100%;
+    width: 358px;
     height: 60px;
     background: radial-gradient(50% 689.8% at 50% 45.3%, #000000 0%, #5F2DCA 100%);
     backdrop-filter: blur(40px);
     border-radius: 50px;
-    margin-bottom: 24px;
+    position: fixed;
+    left: 16px;
+    bottom: 73px;
 }
 
 .link{
     display: flex;
+    position: fixed;
+    bottom: 145px;
+    left: 16px;
     justify-content: space-between;
     align-items: center;
     padding: 18px 16px;
-    width: 100%;
+    width: 358px;
     height: 60px;
     box-sizing: border-box;
     background: #000000;
     border: 1.5px solid rgba(255, 255, 255, 0.17);
     backdrop-filter: blur(40px);
     border-radius: 50px;
-    margin-bottom: 14px;
-    margin-top: -80px;
 }
 
 

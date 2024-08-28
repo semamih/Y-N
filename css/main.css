@@ -149,9 +149,24 @@ body{
 }
 .farming-img{
     position: absolute;
+    z-index: -1;
+}
+.img-1{
     left: -13px;
     bottom: 27px;
+}
+.img-2{
+    left: 8px;
+    bottom: 50px;
+}
+.tuman-1{
+    display: none;
+}
+.tuman-2{
+    position: absolute;
     z-index: -1;
+    left: -26px;
+    bottom: -28px;
 }
 .menu-item-active svg path{
     stroke: #9C59CC;

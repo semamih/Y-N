@@ -36,7 +36,8 @@
         <p class="farming-hour">
             4:32h
         </p>
-        <img src="img/1.png" alt="" class="farming-img">
+        <img src="img/tuman/2.png" alt="" class="tuman tuman-1">
+        <img src="img/1.png" alt="" class="farming-img img-1">
     </div>
 
     <div class="nav-menu-items">
@@ -91,7 +92,25 @@
         </div>
     </div>
 </div>
+<script>
+    let myImage = document.querySelector(".farming-img");
+    let myButton = document.querySelector('.coinsCount-button');
+    let tuman = document.querySelector(".tuman");
 
+    let count = 1;
+    myButton.addEventListener('click', function() {
+        count++;
+
+        myImage.src = `img/${count}.png`;
+        myImage.classList.remove("img-" + (count - 1));
+        myImage.classList.add("img-" + count);
+
+        tuman.src = `img/tuman/${count}.png`;
+        tuman.classList.remove("tuman-" + (count - 1));
+        tuman.classList.add("tuman-" + count);
+    });
+
+</script>
 
 
 </body>
