@@ -1,10 +1,13 @@
 body{
     background: url("../img/bg-light-glow.png") no-repeat center/cover;
-    margin: 0;
+    max-width: 390px;
+    margin: 0 auto;
 }
 .screen {
     padding: 14px 16px 34px 16px;
     height: 100%;
+    max-width: 390px;
+    margin: 0 auto;
 }
 .nav-menu-item{
     display: flex;

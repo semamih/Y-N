@@ -2,10 +2,13 @@ body{
     background-image: url(../img/bg-light-glow.png);
     background-repeat: no-repeat;
     background-size: cover;
+    max-width: 390px;
+    margin: 0 auto;
 }
 .screen {
     padding: 24px 16px 0 16px;
-    /*position: relative;*/
+    max-width: 390px;
+    margin: 0 auto;
     height: 100%;
 }
 .nav-menu-item{

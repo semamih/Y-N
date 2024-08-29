@@ -3,10 +3,14 @@ body{
     background: url('../img/bg-light-glow.png') no-repeat fixed center/cover;
     padding: 0 16px 0 16px;
     position: relative;
+    max-width: 390px;
+    margin: 0 auto;
 }
 .container{
     height: 100vh;
     position: relative;
+    max-width: 390px;
+    margin: 0 auto;
 }
 .loading-bar {
     height: 41px;

@@ -1,6 +1,7 @@
 body{
     background: url("../img/bg-light-glow.png") no-repeat center/cover;
-    margin: 0;
+    max-width: 390px;
+    margin: 0 auto;
 }
 .bg-2{
     background: linear-gradient(180deg, #5F2DCA 0%, #000000 90.6%);
@@ -9,6 +10,8 @@ body{
     padding: 14px 0 24px 0;
     height: 100%;
     margin-bottom: 20px;
+    max-width: 390px;
+    margin: 0 auto;
 }
 .nav-menu-item{
     display: flex;
