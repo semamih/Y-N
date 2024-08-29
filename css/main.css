@@ -150,6 +150,13 @@ body{
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
 }
+.menu-item-active svg path{
+    stroke: #9C59CC;
+}
+.menu-item-active .nav-menu-item-title{
+    color: #9C59CC;
+}
+
 .farming-img{
     position: absolute;
     z-index: -1;
@@ -158,12 +165,12 @@ body{
     left: -13px;
     bottom: 27px;
 }
-.img-2{
-    left: 8px;
-    bottom: 50px;
-}
 .tuman-1{
     display: none;
+}
+.img-2{
+    left: 5px;
+    bottom: 50px;
 }
 .tuman-2{
     position: absolute;
@@ -171,14 +178,36 @@ body{
     left: -26px;
     bottom: -28px;
 }
-.menu-item-active svg path{
-    stroke: #9C59CC;
+.img-3{
+    left: -15px;
+    bottom: 29px;
 }
-.menu-item-active .nav-menu-item-title{
-    color: #9C59CC;
+.tuman-3{
+    position: absolute;
+    z-index: -1;
+    left: -26px;
+    bottom: -28px;
 }
-
-
+.img-4{
+    left: -26px;
+    bottom: -41px;
+}
+.tuman-4{
+    position: absolute;
+    z-index: -1;
+    left: -26px;
+    bottom: -28px;
+}
+.img-5{
+    left: -26px;
+    bottom: -59px;
+}
+.tuman-5{
+    position: absolute;
+    z-index: -1;
+    left: -26px;
+    bottom: -28px;
+}
 
 
 

@@ -1,6 +1,6 @@
 body{
     height: 100vh;
-    background: url('../img/bg-glow.png') no-repeat fixed center/cover;
+    background: url('../img/bg-light-glow.png') no-repeat fixed center/cover;
     max-width: 390px;
     margin: 0 auto;
 }

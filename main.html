@@ -100,14 +100,25 @@
     let count = 1;
     myButton.addEventListener('click', function() {
         count++;
+        if(count < 6){
 
-        myImage.src = `img/${count}.png`;
-        myImage.classList.remove("img-" + (count - 1));
-        myImage.classList.add("img-" + count);
+            myImage.src = `img/${count}.png`;
+            myImage.classList.remove("img-" + (count - 1));
+            myImage.classList.add("img-" + count);
 
-        tuman.src = `img/tuman/${count}.png`;
-        tuman.classList.remove("tuman-" + (count - 1));
-        tuman.classList.add("tuman-" + count);
+            tuman.src = `img/tuman/${count}.png`;
+            tuman.classList.remove("tuman-" + (count - 1));
+            tuman.classList.add("tuman-" + count);
+        }
+        else{
+            myImage.src = `img/1.png`;
+            tuman.src = `img/tuman/1}.png`;
+            myImage.classList.remove("img-5");
+            tuman.classList.remove("tuman-5");
+            myImage.classList.add("img-1");
+            tuman.classList.add("tuman-1");
+            count = 1;
+        }
     });
 
 </script>
