@@ -1,11 +1,15 @@
 body{
     background: url("../img/bg-light-glow.png") no-repeat center/cover;
     margin: 0;
+    max-width: 390px;
+    margin: 0 auto;
 }
 .screen {
     padding: 14px 16px 24px 16px;
     height: 100%;
     margin-bottom: 20px;
+    max-width: 390px;
+    margin: 0 auto;
 }
 .nav-menu-item{
     display: flex;
@@ -115,7 +119,7 @@ body{
     display: flex;
     flex-direction: column;
     row-gap: 8px;
-    margin-bottom: 80px;
+    margin-bottom: 180px;
 }
 .friends-button{
     display: flex;
@@ -129,7 +133,6 @@ body{
     backdrop-filter: blur(40px);
     border-radius: 50px;
     position: fixed;
-    left: 16px;
     bottom: 73px;
 }
 
@@ -137,7 +140,6 @@ body{
     display: flex;
     position: fixed;
     bottom: 145px;
-    left: 16px;
     justify-content: space-between;
     align-items: center;
     padding: 18px 16px;
