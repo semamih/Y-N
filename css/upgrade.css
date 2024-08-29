@@ -256,6 +256,11 @@ body{
 .bold{
     font-family: "InterBold",sans-serif;
 }
+.custom-select option {
+    background-color: #1a1836; /* Цвет фона для опций */
+    color: white;
+    padding: 10px; /* Отступы внутри опций */
+}
 
 
 

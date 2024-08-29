@@ -25,10 +25,22 @@
             <img src="img/coin-2.png" alt="">
             <div class="reward-count">+ 450</div>
         </div>
-        <select name="language" class="lang-language">
-            <option value="English">English</option>
-            <option value="Russia">Russia</option>
-        </select>
+        <div class="custom-select-wrapper">
+            <div class="custom-select">
+                <div class="blockforjustify"></div>
+                <div class="custom-select-trigger">English</div>
+                <div class="custom-select-arrow">
+                    <img src="img/select-arrow-down.svg" alt="" class="arrow-down">
+                    <img src="img/select-arrow-top.svg" alt="" class="arrow-top">
+                </div>
+                <div class="custom-options">
+                    <span class="custom-option" data-value="en">English</span>
+                    <span class="custom-option" data-value="ru">Русский</span>
+                    <span class="custom-option" data-value="en">English</span>
+                    <span class="custom-option" data-value="ru">Русский</span>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="page-number-nav">
         <button class="left-arrow">
@@ -46,6 +58,42 @@
         </button>
     </div>
 </div>
+
+<script>
+    let customSelect = document.querySelector(".custom-select");
+    const pageNumberNav = document.querySelector('.page-number-nav');
+
+    document.querySelector('.custom-select-wrapper').addEventListener('click', function() {
+        this.querySelector('.custom-select').classList.toggle('open');
+    });
+
+    customSelect.addEventListener('click', function() {
+        customSelect.style.marginBottom = "100px";
+        togglePageNumberNav();
+    });
+
+    for (const option of document.querySelectorAll(".custom-option")) {
+        option.addEventListener('click', function() {
+            this.closest('.custom-select').querySelector('.custom-select-trigger').textContent = this.textContent;
+            this.closest('.custom-select').classList.remove('open');
+        });
+    }
+    window.addEventListener('click', function(e) {
+        const select = document.querySelector('.custom-select');
+        if (!select.contains(e.target)) {
+            select.classList.remove('open');
+            customSelect.style.marginBottom = "0px";
+        }
+    });
+
+    function togglePageNumberNav() {
+        if (customSelect.classList.contains('open')) {
+            pageNumberNav.style.display = 'flex';
+        } else {
+            pageNumberNav.style.display = 'none';
+        }
+    }
+</script>
 
 </body>
 </html>

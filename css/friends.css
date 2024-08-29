@@ -119,7 +119,7 @@ body{
     display: flex;
     flex-direction: column;
     row-gap: 8px;
-    margin-bottom: 180px;
+    margin-bottom: 200px;
 }
 .friends-button{
     display: flex;

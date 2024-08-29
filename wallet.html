@@ -17,23 +17,37 @@
         </svg>
     </div>
     <div class="wal-selects">
-        <div class="select-container">
-            <label for="language">Language:</label>
-            <select id="language" class="custom-select">
-                <option value="en">English</option>
-                <option value="ru">Русский</option>
-            </select>
+        <div class="custom-select-wrapper">
+            <div class="custom-select">
+                <div class="custom-select-trigger">English</div>
+                <div class="custom-select-arrow">
+                    <img src="img/select-arrow-down.svg" alt="" class="arrow-down">
+                    <img src="img/select-arrow-top.svg" alt="" class="arrow-top">
+                </div>
+                <div class="custom-options">
+                    <span class="custom-option" data-value="en">English</span>
+                    <span class="custom-option" data-value="ru">Русский</span>
+                </div>
+            </div>
         </div>
-
-        <div class="select-container">
-            <label for="country">Country:</label>
-            <select id="country" class="custom-select">
-                <option value="russia">Russia</option>
-                <option value="usa">USA</option>
-            </select>
+        <div class="custom-select-wrapper2">
+            <div class="custom-select2">
+                <div class="custom-select-trigger2">Russia</div>
+                <div class="custom-select-arrow2">
+                    <img src="img/select-arrow-down.svg" alt="" class="arrow-down2">
+                    <img src="img/select-arrow-top.svg" alt="" class="arrow-top2">
+                </div>
+                <div class="custom-options2">
+                    <span class="custom-option2" data-value="russia">Russia</span>
+                    <span class="custom-option2" data-value="russia">Russia</span>
+                    <span class="custom-option2" data-value="russia">Russia</span>
+                    <span class="custom-option2" data-value="russia">Russia</span>
+                </div>
+            </div>
         </div>
     </div>
     <button class="wal-selects-button" id="save-button">Save</button>
+    <button class="wal-selects-button2">Save</button>
     <div class="wal-connected">
         <h3 class="wal-connected-title">
             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -198,5 +212,64 @@
         <div class="nav-menu-item-title">Wallet</div>
     </div>
 </div>
+
+<script>
+    let selectButton = document.querySelector(".wal-selects-button");
+    let customSelect = document.querySelector(".custom-select");
+
+    document.querySelector('.custom-select-wrapper').addEventListener('click', function() {
+        this.querySelector('.custom-select').classList.toggle('open');
+    });
+    customSelect.addEventListener('click', function() {
+        customSelect.style.marginBottom = "100px";
+    });
+
+    for (const option of document.querySelectorAll(".custom-option")) {
+        option.addEventListener('click', function() {
+            selectButton.style.display = "flex"
+            this.closest('.custom-select').querySelector('.custom-select-trigger').textContent = this.textContent;
+            this.closest('.custom-select').classList.remove('open');
+        });
+    }
+    window.addEventListener('click', function(e) {
+        const select = document.querySelector('.custom-select');
+        if (!select.contains(e.target)) {
+            selectButton.style.display = "none";
+            select.classList.remove('open');
+            customSelect.style.marginBottom = "0px";
+        }
+    });
+
+    // ------------------------
+
+    let customSelect2 = document.querySelector(".custom-select2");
+    let selectButton2 = document.querySelector(".wal-selects-button2");
+
+    document.querySelector('.custom-select-wrapper2').addEventListener('click', function() {
+        this.querySelector('.custom-select2').classList.toggle('open');
+    });
+    customSelect2.addEventListener('click', function() {
+        customSelect2.style.marginBottom = "100px";
+    });
+
+    for (const option of document.querySelectorAll(".custom-option2")) {
+        option.addEventListener('click', function() {
+            selectButton2.style.display = "flex"
+            this.closest('.custom-select2').querySelector('.custom-select-trigger2').textContent = this.textContent;
+            this.closest('.custom-select2').classList.remove('open');
+        });
+    }
+    window.addEventListener('click', function(e) {
+        const select = document.querySelector('.custom-select2');
+        if (!select.contains(e.target)) {
+            selectButton2.style.display = "none";
+            select.classList.remove('open');
+            customSelect2.style.marginBottom = "0px";
+        }
+    });
+
+
+
+</script>
 </body>
 </html>
