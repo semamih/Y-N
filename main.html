@@ -20,7 +20,7 @@
         </div>
         <div class="coinsCount">
             <img src="img/coin3.png" alt="">
-            <div class="count">100000</div>
+            <div class="count">1 000 000</div>
             <div class="coinsCount-button">Upgrade</div>
         </div>
     </div>
@@ -98,9 +98,11 @@
     let tuman = document.querySelector(".tuman");
 
     let count = 1;
+    let levelCount = 6;  //change
+
     myButton.addEventListener('click', function() {
         count++;
-        if(count < 6){
+        if(count <= levelCount){
 
             myImage.src = `img/${count}.png`;
             myImage.classList.remove("img-" + (count - 1));
@@ -113,8 +115,8 @@
         else{
             myImage.src = `img/1.png`;
             tuman.src = `img/tuman/1}.png`;
-            myImage.classList.remove("img-5");
-            tuman.classList.remove("tuman-5");
+            myImage.classList.remove("img-" + levelCount);
+            tuman.classList.remove("tuman-" + levelCount);
             myImage.classList.add("img-1");
             tuman.classList.add("tuman-1");
             count = 1;

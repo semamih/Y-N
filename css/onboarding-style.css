@@ -1,11 +1,10 @@
 body{
-    height: 100vh;
     background: url('../img/bg-light-glow.png') no-repeat fixed center/cover;
     max-width: 390px;
     margin: 0 auto;
 }
 .screen-1{
-    position: relative;
+    height: 100%;
     padding: 0 15px 0 15px;
 }
 .screen-2,
@@ -120,6 +119,7 @@ body{
     font-size: 20px;
     color: #FFFFFF;
     letter-spacing: 5px;
+    text-indent: 5px;
 }
 .lang-language{
     margin: 0 auto;
@@ -250,7 +250,8 @@ body{
     align-items: center;
     padding: 18px 16px;
     isolation: isolate;
-    width: 338px;
+    width: 100%;
+    max-width: 338px;
     height: 60px;
     background: #000000;
     border: 1.5px solid #3A3A3A;
@@ -264,24 +265,6 @@ body{
     align-items: center;
     font-size: 16px;
     cursor: pointer;
-}
-.custom-options{
-    display: none;
-    position: absolute;
-    flex-direction: column;
-    top: 100%;
-    left: 0;
-    right: 0;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 18px 16px;
-    width: 338px;
-    height: 108px;
-    background: #000;
-    backdrop-filter: blur(40px);
-    border-radius: 0px 0px 20px 20px;
-    border: 1.5px solid #3A3A3A;
-    row-gap: 24px;
 }
 .custom-options,
 .custom-select-trigger{
@@ -309,7 +292,21 @@ body{
     display: none;
 }
 .custom-options {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    top: 100%;
     left: -1.5px;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 18px 16px;
+    width: calc(100% + 3px);
+    height: 108px;
+    background: #000;
+    backdrop-filter: blur(40px);
+    border-radius: 0px 0px 20px 20px;
+    border: 1.5px solid #3A3A3A;
+    row-gap: 24px;
     border-top: none;
     overflow: scroll;
 }
