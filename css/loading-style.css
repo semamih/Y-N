@@ -32,6 +32,7 @@ body{
 .coin-container img{
     width: 82px;
     height: 82px;
+    border-radius: 50%;
 }
 .coin-container{
     border-radius: 50%;
