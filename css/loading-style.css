@@ -30,8 +30,8 @@ body{
     transition: transform 5s;
 }
 .coin-container img{
-    width: 82px;
-    height: 82px;
+    width: 97px;
+    height: 95px;
     border-radius: 50%;
 }
 .coin-container{
@@ -41,7 +41,6 @@ body{
     top: calc(50% - 82px);
     transform: translate( calc(-50% + 41px) , calc(-50% + 61.5px));
     display: flex;
-    border-radius: 50%;
 }
 .coin-background {
     border-radius: 50%;

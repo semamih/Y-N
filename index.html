@@ -10,8 +10,8 @@
 <body>
 <div class="container">
     <div class="coin-container">
-        <div class="coin-background"></div>
-        <img src="img/coin.png" alt="coin" class="coin">
+<!--        <div class="coin-background"></div>-->
+        <img src="img/Group3637.png" alt="coin" class="coin">
     </div>
     <div class="loading-bar">
         <div class="percentage" id="percentage">0%</div>
@@ -25,8 +25,8 @@
         let coin = document.querySelector('.coin');
         let percentage = document.querySelector('.percentage');
 
-        const originalSize = 82;
-        const targetSizeCoin = 231;
+        const originalSize = 95;
+        const targetSizeCoin = 600;
         const animationDuration = 5000; // 5 секунд
 
         setTimeout(() => {
@@ -53,20 +53,21 @@
 
             requestAnimationFrame(animateSize);
 
-            // Анимация изменения числа
-            let counter = 0;
-            let interval = setInterval(() => {
-                if (counter < 100) {
-                    counter++;
-                    percentage.textContent = counter + '%';
-                } else {
-                    clearInterval(interval);
-                }
-            }, 50);
         }, 100);
-        // setTimeout(function(){
-        //     window.location.href = "./onboarding.html";
-        // }, 5000);
+
+        // Анимация изменения числа
+        let counter = 0;
+        let interval = setInterval(() => {
+            if (counter < 100) {
+                counter++;
+                percentage.textContent = counter + '%';
+            } else {
+                clearInterval(interval);
+            }
+        }, 50);
+        setTimeout(function(){
+            window.location.href = "./onboarding.html";
+        }, 5000);
     };
 
 </script>
