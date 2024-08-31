@@ -20,18 +20,21 @@ body{
 }
 .nav-menu-items {
     box-sizing: border-box;
-    height: 110px;
+    height: 87px;
     padding-top: 4.5px;
     position: fixed;
-    justify-content: space-between;
     width: 100%;
-    max-width: 390px;
-    padding-left: 22.5px;
+    right: 0;
     padding-right: 22.5px;
+    padding-left: 22.5px;
     bottom: 0;
     background: #000;
+}
+.nav-menu-items-content{
+    max-width: 390px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 .nav-menu-item-title{
     font-family: 'InterRegular',sans-serif;
