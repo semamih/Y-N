@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Main</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/main.css?v=2">
+    <link rel="stylesheet" href="css/main.css?v=3">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -36,8 +36,9 @@
         <p class="farming-hour">
             4:32h
         </p>
-        <img src="img/tuman/2.png" alt="" class="tuman tuman-1">
+        <img src="img/tuman/" alt="" class="tuman tuman-1">
         <img src="img/1.png" alt="" class="farming-img img-1">
+        <img src="img/luna/" alt="" class="luna luna-1">
     </div>
 
 </div>
@@ -99,9 +100,10 @@
     let myImage = document.querySelector(".farming-img");
     let myButton = document.querySelector('.coinsCount-button');
     let tuman = document.querySelector(".tuman");
+    let luna = document.querySelector(".luna");
 
     let count = 1;
-    let levelCount = 6;  //change
+    let levelCount = 4;  //change
 
     myButton.addEventListener('click', function() {
         count++;
@@ -114,14 +116,23 @@
             tuman.src = `img/tuman/${count}.png`;
             tuman.classList.remove("tuman-" + (count - 1));
             tuman.classList.add("tuman-" + count);
+
+            luna.src = `img/luna/${count}.png`;
+            luna.classList.remove("luna-" + (count - 1));
+            luna.classList.add("luna-" + count);
+
         }
         else{
             myImage.src = `img/1.png`;
             tuman.src = `img/tuman/1}.png`;
             myImage.classList.remove("img-" + levelCount);
+            luna.src = `img/luna/1}.png`;
+
             tuman.classList.remove("tuman-" + levelCount);
+            luna.classList.remove("luna-" + levelCount);
             myImage.classList.add("img-1");
             tuman.classList.add("tuman-1");
+            luna.classList.add("luna-1");
             count = 1;
         }
     });
