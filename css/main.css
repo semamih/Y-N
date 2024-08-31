@@ -9,7 +9,8 @@ body{
     padding: 24px 16px 0 16px;
     max-width: 390px;
     margin: 0 auto;
-    height: 100%;
+    height: 100vh;
+    position: relative;
 }
 .nav-menu-item{
     display: flex;
@@ -22,14 +23,14 @@ body{
     height: 49px;
     padding-top: 4.5px;
     position: fixed;
+    justify-content: space-between;
+    max-width: 348px;
     width: 100%;
-    left: 0;
-    bottom: 0;
+    left: calc(50% - 174px);
+    bottom: 18px;
     background: #000;
     display: flex;
     align-items: center;
-    justify-content: center;
-    column-gap: 50px;
 }
 .nav-menu-item-title{
     font-family: 'InterRegular',sans-serif;
@@ -111,7 +112,7 @@ body{
     background: #2B2B4A;
     border-radius: 50px;
     position: absolute;
-    bottom: 73px;
+    bottom: 94px;
     left: calc(50% - 169px);
 }
 .farming-reward{
