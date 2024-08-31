@@ -60,9 +60,12 @@
 
 <script>
     let customSelect = document.querySelector(".custom-select");
+    let pageNum = document.querySelector(".page-number-nav");
+
 
     document.querySelector('.custom-select-wrapper').addEventListener('click', function() {
         this.querySelector('.custom-select').classList.toggle('open');
+        // pageNum.style.display = "none";
     });
 
     customSelect.addEventListener('click', function() {
@@ -81,6 +84,7 @@
             customSelect.style.marginBottom = "0px";
         }
     });
+
 </script>
 
 </body>

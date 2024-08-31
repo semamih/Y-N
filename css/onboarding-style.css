@@ -211,7 +211,7 @@ body{
 }
 .reward-button{
     position: fixed;
-    bottom: 24px;
+    bottom: 58px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -248,6 +248,8 @@ body{
     text-align: center;
 }
 .custom-select{
+    z-index: 1;
+    position: relative;
     display: flex;
     text-align: center;
     justify-content: space-between;
@@ -285,9 +287,6 @@ body{
 .custom-select.open .custom-options {
     display: flex;
 }
-.custom-select .page-number-nav {
-    display: flex;
-}
 .custom-select.open{
     border-radius: 20px 20px 0 0;
     border-bottom: none;
@@ -321,8 +320,62 @@ body{
     overflow: scroll;
 }
 
-@media screen and (max-height: 660px) {
-
+@media screen and (max-height: 700px) {
+    .reward-day {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .reward-screen .reward {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .map-image img {
+        width: 315px;
+        height: 150px;
+    }
+    .map-image{
+        text-align: center;
+    }
+}
+@media screen and (max-height: 630px) {
+    .reward-day {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .reward-screen .reward {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .page-3 h2 {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    .screen-3 {
+        padding-top: 70px;
+    }
+    .lang-title{
+        font-size: 26px;
+    }
+    .lang-subtitle {
+        font-size: 18px;
+    }
+    .reward-count {
+        font-size: 40px;
+    }
+    .reward img {
+        width: 90px;
+        height: 90px;
+    }
+    .lang-subtitle {
+        margin-bottom: 30px;
+    }
+    .reward {
+        margin-bottom: 30px;
+    }
+    .custom-options{
+        height: 85px;
+        font-size: 18px;
+    }
 }
 
 
