@@ -16,19 +16,23 @@ body{
     align-items: center;
     justify-content: center;
 }
-.nav-menu-items{
+.nav-menu-items {
     box-sizing: border-box;
-    height: 49px;
+    height: 87px;
     padding-top: 4.5px;
     position: fixed;
     width: 100%;
-    left: 0;
+    right: 0;
+    padding-right: 22.5px;
+    padding-left: 22.5px;
     bottom: 0;
     background: #000;
+}
+.nav-menu-items-content{
+    max-width: 390px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    column-gap: 50px;
+    justify-content: space-between;
 }
 .nav-menu-item-title{
     font-family: 'InterRegular',sans-serif;

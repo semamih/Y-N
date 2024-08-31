@@ -21,19 +21,23 @@ body{
     align-items: center;
     justify-content: center;
 }
-.nav-menu-items{
+.nav-menu-items {
     box-sizing: border-box;
-    height: 49px;
+    height: 87px;
     padding-top: 4.5px;
     position: fixed;
     width: 100%;
-    left: 0;
+    right: 0;
+    padding-right: 22.5px;
+    padding-left: 22.5px;
     bottom: 0;
     background: #000;
+}
+.nav-menu-items-content{
+    max-width: 390px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    column-gap: 50px;
+    justify-content: space-between;
 }
 .nav-menu-item-title{
     font-family: 'InterRegular',sans-serif;
@@ -137,22 +141,22 @@ body{
 
 @media screen and (max-height: 650px ){
     .done-coins-title {
-        margin-bottom: 50px;
-        margin-top: 80px;
+        margin-bottom: 40px;
+        margin-top: 70px;
     }
     .money{
-        margin-bottom: 80px;
+        margin-bottom: 70px;
     }
 }
 @media screen and (max-height: 600px ){
     .done-coins-title {
-        margin-bottom: 70px;
-        margin-top: 50px;
+        margin-bottom: 60px;
+        margin-top: 40px;
     }
     .money{
-        margin-bottom: 70px;
+        margin-bottom: 60px;
     }
     .money-plus{
-        margin-bottom: 70px;
+        margin-bottom: 60px;
     }
 }
