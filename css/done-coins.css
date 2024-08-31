@@ -134,3 +134,25 @@ body{
 .done-rep-title{
     margin-bottom: 114px;
 }
+
+@media screen and (max-height: 650px ){
+    .done-coins-title {
+        margin-bottom: 50px;
+        margin-top: 80px;
+    }
+    .money{
+        margin-bottom: 80px;
+    }
+}
+@media screen and (max-height: 600px ){
+    .done-coins-title {
+        margin-bottom: 70px;
+        margin-top: 50px;
+    }
+    .money{
+        margin-bottom: 70px;
+    }
+    .money-plus{
+        margin-bottom: 70px;
+    }
+}

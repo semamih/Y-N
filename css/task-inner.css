@@ -111,6 +111,7 @@ body{
     opacity: 0.5;
     backdrop-filter: blur(40px);
     border-radius: 50px;
+    margin-bottom: 52px;
 
     font-family: 'SF Pro Text Medium',sans-serif;
     font-size: 20px;
