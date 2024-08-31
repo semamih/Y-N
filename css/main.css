@@ -18,16 +18,17 @@ body{
     align-items: center;
     justify-content: center;
 }
-.nav-menu-items{
+.nav-menu-items {
     box-sizing: border-box;
-    height: 49px;
+    height: 110px;
     padding-top: 4.5px;
     position: fixed;
     justify-content: space-between;
-    max-width: 348px;
     width: 100%;
-    left: calc(50% - 174px);
-    bottom: 18px;
+    max-width: 390px;
+    padding-left: 22.5px;
+    padding-right: 22.5px;
+    bottom: 0;
     background: #000;
     display: flex;
     align-items: center;
@@ -112,7 +113,7 @@ body{
     background: #2B2B4A;
     border-radius: 50px;
     position: absolute;
-    bottom: 94px;
+    bottom: 111px;
     left: calc(50% - 169px);
 }
 .farming-reward{
