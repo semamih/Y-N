@@ -319,7 +319,15 @@ body{
     border-top: none;
     overflow: scroll;
 }
+.page-number-nav {
+    bottom: 58px;
+}
 
+@media  screen and (max-width: 389px) {
+    .page-number-nav {
+        width: 330px;
+    }
+}
 @media screen and (max-height: 700px) {
     .reward-day {
         margin-top: 50px;
@@ -336,6 +344,9 @@ body{
     .map-image{
         text-align: center;
     }
+    .screen-3 {
+        padding-top: 60px;
+    }
 }
 @media screen and (max-height: 630px) {
     .reward-day {
@@ -347,11 +358,8 @@ body{
         margin-bottom: 40px;
     }
     .page-3 h2 {
-        margin-top: 60px;
-        margin-bottom: 60px;
-    }
-    .screen-3 {
-        padding-top: 70px;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
     .lang-title{
         font-size: 26px;
@@ -366,6 +374,9 @@ body{
         width: 90px;
         height: 90px;
     }
+    .map-image{
+        margin-bottom: 30px;
+    }
     .lang-subtitle {
         margin-bottom: 30px;
     }
@@ -375,6 +386,21 @@ body{
     .custom-options{
         height: 85px;
         font-size: 18px;
+    }
+    .custom-select{
+        height: 55px;
+    }
+}
+@media screen and (max-height: 600px){
+    .reward {
+        margin-bottom: 25px;
+    }
+    .reward-count {
+        font-size: 35px;
+    }
+    .reward img {
+        width: 80px;
+        height: 80px;
     }
 }
 
