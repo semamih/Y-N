@@ -214,14 +214,10 @@
 </div>
 
 <script>
-    let selectButton = document.querySelector(".wal-selects-button");
-    let customSelect = document.querySelector(".custom-select");
+    let selectButton = document.querySelector(".wal-selects-button");;
 
     document.querySelector('.custom-select-wrapper').addEventListener('click', function() {
         this.querySelector('.custom-select').classList.toggle('open');
-    });
-    customSelect.addEventListener('click', function() {
-        customSelect.style.marginBottom = "100px";
     });
 
     for (const option of document.querySelectorAll(".custom-option")) {
@@ -236,20 +232,15 @@
         if (!select.contains(e.target)) {
             selectButton.style.display = "none";
             select.classList.remove('open');
-            customSelect.style.marginBottom = "0px";
         }
     });
 
     // ------------------------
 
-    let customSelect2 = document.querySelector(".custom-select2");
     let selectButton2 = document.querySelector(".wal-selects-button2");
 
     document.querySelector('.custom-select-wrapper2').addEventListener('click', function() {
         this.querySelector('.custom-select2').classList.toggle('open');
-    });
-    customSelect2.addEventListener('click', function() {
-        customSelect2.style.marginBottom = "100px";
     });
 
     for (const option of document.querySelectorAll(".custom-option2")) {
@@ -264,7 +255,6 @@
         if (!select.contains(e.target)) {
             selectButton2.style.display = "none";
             select.classList.remove('open');
-            customSelect2.style.marginBottom = "0px";
         }
     });
 

@@ -276,10 +276,16 @@ body{
     font-size: 20px;
     color: #fff;
 }
+.custom-option{
+    display: block;
+}
 .custom-options .custom-option:hover {
     color: #9C59CC;
 }
 .custom-select.open .custom-options {
+    display: flex;
+}
+.custom-select .page-number-nav {
     display: flex;
 }
 .custom-select.open{

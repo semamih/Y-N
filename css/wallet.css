@@ -217,7 +217,7 @@ body{
     align-items: center;
     flex-direction: column;
     row-gap: 8px;
-    margin-bottom: 24px;
+    margin-bottom: 62px;
 }
 
 
@@ -319,6 +319,12 @@ body{
 .custom-select.open .arrow-down{
     display: none;
 }
+.custom-select.open {
+    margin-bottom: 100px;
+}
+.custom-select2.open {
+    margin-bottom: 100px;
+}
 .custom-select2.open .custom-options2 {
     display: flex;
 }
@@ -335,6 +341,16 @@ body{
     display: none;
 }
 
+
+@media screen and (max-width : 390px) {
+    .custom-select,
+    .custom-select2{
+        width: 169px;
+    }
+    .custom-options, .custom-options2 {
+        width: 169px;
+    }
+}
 
 
 

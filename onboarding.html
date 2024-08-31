@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
   <title>Onboarding</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/onboarding-style.css?v=1">
+  <link rel="stylesheet" href="css/onboarding-style.css?v=3">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 </head>
@@ -60,7 +60,6 @@
 
 <script>
     let customSelect = document.querySelector(".custom-select");
-    const pageNumberNav = document.querySelector('.page-number-nav');
 
     document.querySelector('.custom-select-wrapper').addEventListener('click', function() {
         this.querySelector('.custom-select').classList.toggle('open');
@@ -68,13 +67,11 @@
 
     customSelect.addEventListener('click', function() {
         customSelect.style.marginBottom = "120px";
-        togglePageNumberNav();
     });
 
     for (const option of document.querySelectorAll(".custom-option")) {
         option.addEventListener('click', function() {
             this.closest('.custom-select').querySelector('.custom-select-trigger').textContent = this.textContent;
-            this.closest('.custom-select').classList.remove('open');
         });
     }
     window.addEventListener('click', function(e) {
@@ -84,14 +81,6 @@
             customSelect.style.marginBottom = "0px";
         }
     });
-
-    function togglePageNumberNav() {
-        if (customSelect.classList.contains('open')) {
-            pageNumberNav.style.display = 'flex';
-        } else {
-            pageNumberNav.style.display = 'none';
-        }
-    }
 </script>
 
 </body>
