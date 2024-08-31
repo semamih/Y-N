@@ -111,7 +111,7 @@ body{
     column-gap: 8px;
     row-gap: 10px;
     align-items: flex-start;
-    padding: 20px 26px;
+    padding: 20px 26px 46px 26px;
     background: rgba(255, 255, 255, 0.17);
     border-radius: 0px 0px 20px 20px;
 }
@@ -264,6 +264,21 @@ body{
     color: white;
     padding: 10px; /* Отступы внутри опций */
 }
+
+
+@media screen and (max-width: 389px){
+    .standart-items, .vip-items {
+        padding: 17px 18px 46px 18px;
+    }
+}
+
+
+
+
+
+
+
+
 
 
 
