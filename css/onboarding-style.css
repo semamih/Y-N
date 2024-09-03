@@ -280,6 +280,7 @@ body{
 }
 .custom-option{
     display: block;
+    margin-right: 6px;
 }
 .custom-options .custom-option:hover {
     color: #9C59CC;
@@ -307,7 +308,7 @@ body{
     top: 100%;
     left: -1.5px;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     padding: 18px 16px;
     width: calc(100% + 3px);
     height: 108px;
@@ -323,11 +324,6 @@ body{
     bottom: 58px;
 }
 
-@media  screen and (max-width: 389px) {
-    .page-number-nav {
-        width: 330px;
-    }
-}
 @media screen and (max-height: 700px) {
     .reward-day {
         margin-top: 50px;
@@ -404,6 +400,82 @@ body{
     }
 }
 
+@media screen and (max-width: 390px){
+    .page-3 p:nth-child(1) {
+        font-size: 18px;
+    }
+    .page-3 p:nth-child(2) {
+        font-size: 18px;
+        width: 305px;
+    }
+    .page-3 h2 {
+        font-size: 26px;
+    }
+    .reward-count {
+        font-weight: bold;
+        font-size: 48px;
+        color: #FFFFFF;
+    }
+    .reward img {
+        width: 98px;
+        height: 98px;
+    }
+}
+
+@media  screen and (max-width: 389px) {
+    .page-number-nav {
+        width: 330px;
+    }
+    .page-3 p:nth-child(1) {
+        max-width: 250px;
+    }
+
+}
+@media  screen and (max-width: 375px) {
+    .page-number-nav {
+        width: 320px;
+    }
+    .reward-button {
+        max-width: 330px;
+        left: calc(50% - 165px);
+    }
+
+}
+@media  screen and (max-width: 365px) {
+    .page-number-nav {
+        width: 315px;
+    }
+
+}
+@media  screen and (max-width: 360px) {
+    .page-number-nav {
+        width: 310px;
+    }
 
 
+}
+@media  screen and (max-width: 355px) {
+    .page-number-nav {
+        width: 305px;
+    }
 
+}
+@media  screen and (max-width: 351px) {
+    .page-3 p:nth-child(1) {
+        max-width: 234px;
+    }
+
+}
+@media  screen and (max-width: 350px) {
+    .page-number-nav {
+        width: 300px;
+    }
+    .page-3 p:nth-child(1) {
+        font-size: 17px;
+    }
+    .page-3 p:nth-child(2) {
+        font-size: 17px;
+        width: 288px;
+    }
+
+}

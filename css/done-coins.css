@@ -138,6 +138,42 @@ body{
 .done-rep-title{
     margin-bottom: 114px;
 }
+@media screen and (max-height: 750px ){
+    .money{
+        margin-bottom: 90px;
+    }
+}
+@media screen and (max-height: 730px ){
+    .done-coins-title {
+        margin-top: 60px;
+    }
+    .money{
+        margin-bottom: 80px;
+    }
+}
+@media screen and (max-height: 730px ){
+    .money{
+        margin-bottom: 70px;
+    }
+}
+@media screen and (max-height: 700px ){
+    .done-coins-title {
+        margin-bottom: 80px;
+        margin-top: 60px;
+    }
+    .money{
+        margin-bottom: 60px;
+    }
+}
+@media screen and (max-height: 670px ){
+    .done-coins-title {
+        margin-bottom: 60px;
+        margin-top: 60px;
+    }
+    .money{
+        margin-bottom: 60px;
+    }
+}
 
 @media screen and (max-height: 650px ){
     .done-coins-title {
@@ -145,7 +181,7 @@ body{
         margin-top: 70px;
     }
     .money{
-        margin-bottom: 70px;
+        margin-bottom: 55px;
     }
 }
 @media screen and (max-height: 600px ){

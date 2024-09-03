@@ -78,13 +78,20 @@ body{
     padding: 8px 14px;
     width: 161px;
     background: rgba(255, 255, 255, 0.14);
-    border-radius: 50px;
     display: flex;
     justify-content: center;
 
     font-family: 'InterBold',sans-serif;
     font-size: 25px;
     color: #FFFFFF;
+    border-radius: 50px;
+    border: 2px solid #6633D4;
+
+    /*border-image-source: linear-gradient(270deg, #6633D4 0%, #0039A6 100%);*/
+
+
+
+
 }
 .main-info-bar{
     width: 100%;
@@ -191,6 +198,62 @@ body{
     bottom: -28px;
     z-index: -1;
     position: absolute;
+}
+.thing{
+    font-family: "InterRegular",sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+.notification{
+    width: 100%;
+    height: 394px;
+    background: rgba(255, 255, 255, 0.34);
+    position: absolute;
+    left: 0;
+    top: 105px;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 10px;
+    backdrop-filter: blur(25px);
+}
+.notification-text{
+    font-family: 'InterBold',sans-serif;
+    font-size: 20px;
+    line-height: 120%;
+    color: #6A00B6;
+}
+.close-notification{
+    position: absolute;
+    top: 14px;
+    right: 10px;
+}
+@media  screen and (max-width: 380px){
+    .count {
+        font-size: 23px;
+    }
+    .coinsCount img {
+        width: 58px;
+        height: 58px;
+    }
+    .coinsCount-button {
+        height: 58px;
+        width: 157px;
+    }
+}
+@media  screen and (max-width: 360px){
+    .count {
+        font-size: 22px;
+    }
+    .coinsCount img {
+        width: 56px;
+        height: 56px;
+    }
+    .coinsCount-button {
+        height: 56px;
+        width: 153px;
+    }
 }
 
 

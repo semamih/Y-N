@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Main</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/main.css?v=4">
+    <link rel="stylesheet" href="css/main.css?v=5">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -12,7 +12,7 @@
 <div class="screen">
     <div class="main-level">
         <div class="main-level-info">
-            <div class="main-level-info-rep">REP: 12</div>
+            <div class="main-level-info-rep">REP:  <span class="thing">12</span></div>
             <div class="main-level-info-next">Next level: 45 / 200 points of REP</div>
         </div>
         <div class="main-info-bar">
@@ -28,7 +28,7 @@
         <div class="farming-line"></div>
         <div class="farming-reward">
             <img src="img/coin4.png" alt="">
-            <div class="farming-reward-count">+ 61.01</div>
+            <div class="farming-reward-count">+ 61.0001</div>
         </div>
         <p class="farming-text">
             Farming...
@@ -95,6 +95,13 @@
         </div>
     </div>
 </div>
+<div class="notification">
+    <p class="notification-text">Notification</p>
+    <svg class="close-notification" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M31.2501 18.7498L18.7501 31.2498M18.7501 18.7498L31.2501 31.2498M45.8334 24.9998C45.8334 36.5058 36.506 45.8332 25.0001 45.8332C13.4941 45.8332 4.16675 36.5058 4.16675 24.9998C4.16675 13.4939 13.4941 4.1665 25.0001 4.1665C36.506 4.1665 45.8334 13.4939 45.8334 24.9998Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+
+</div>
 
 <script>
     let myImage = document.querySelector(".farming-img");
@@ -104,6 +111,13 @@
 
     let count = 1;
     let levelCount = 4;  //change
+
+    let close = document.querySelector(".close-notification");
+    let notification = document.querySelector(".notification");
+
+    close.addEventListener('click', function (){
+        notification.style.display = "none";
+    });
 
     myButton.addEventListener('click', function() {
         count++;
