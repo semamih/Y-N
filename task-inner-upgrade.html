@@ -15,15 +15,15 @@
             </svg>
         </div>
         <div class="task-inner-img">
-            <img src="img/tasks/youtube.svg" alt="">
+            <img src="img/tasks/upgrade.svg" alt="">
         </div>
-        <h2 class="task-inner-title">Watch the video </h2>
+        <h2 class="task-inner-title">Do upgrade using stars</h2>
         <p class="task-inner-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         <div class="task-inner-money">
             <img src="img/coin3.png" alt="">
             <div class="task-inner-money-count">+ 120 000</div>
         </div>
-        <div class="task-inner-button-go" onclick="window.location.href = './task-inner-check.html'">Go</div>
+        <div class="task-inner-button-go" >Go</div>  <!--onclick="window.location.href = './task-inner-check.html'" -->
         <div class="task-inner-button-check">
             <svg class="check-svg" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M2 16.333C2 13.5046 2 12.0904 2.87868 11.2117C3.75736 10.333 5.17157 10.333 8 10.333H16C18.8284 10.333 20.2426 10.333 21.1213 11.2117C22 12.0904 22 13.5046 22 16.333C22 19.1614 22 20.5756 21.1213 21.4543C20.2426 22.333 18.8284 22.333 16 22.333H8C5.17157 22.333 3.75736 22.333 2.87868 21.4543C2 20.5756 2 19.1614 2 16.333Z" stroke="white" stroke-width="1.5"/>
@@ -92,9 +92,13 @@
         let checkButton = document.querySelector(".task-inner-button-check");
         let checkSvg = document.querySelector(".check-svg");
 
-        checkButton.addEventListener("click", function (){
+        goButton.addEventListener("click", function (){
             checkSvg.style.display = "none";
+            checkButton.style.opacity = "1";
         });
-    </script>
+        checkButton.addEventListener("click", function (){
+            window.location.href = './done-coins.html';
+        });
+</script>
 </body>
 </html>
