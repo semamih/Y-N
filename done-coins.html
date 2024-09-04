@@ -17,16 +17,15 @@
     <h2 class="done-coins-title">Congratulations!</h2>
     <div class="money">
         <img src="img/coin4.png" alt="" width="30px" height="30px">
-        32 122
+        <span id="money-value">32 122</span>
     </div>
     <div class="money-plus">
         <img src="img/coin3.png" alt="" width="80px" height="80px">
-        + 120 000
+        <span id="money-plus-value">+ 120 000</span>
     </div>
     <div class="done-button">
         Claim Reward
     </div>
-
 </div>
 <div class="nav-menu-items">
     <div class="nav-menu-items-content">
@@ -99,5 +98,41 @@
         </div>
     </div>
 </div>
+
+
+<script>
+    const moneyElement = document.getElementById('money-value');
+    const moneyPlusElement = document.getElementById('money-plus-value');
+    const doneButton = document.querySelector(".done-button");
+
+    let currentMoney = 32122;
+    let moneyPlus = 120000;
+    let duration = 5000;
+    let startTime = null;
+
+    function animateMoneyTransfer(timestamp) {
+        if (!startTime) startTime = timestamp;
+
+        const progress = timestamp - startTime;
+        const percentage = Math.min(progress / duration, 1);
+
+
+        const moneyIncrement = Math.floor(percentage * moneyPlus);
+        const updatedMoney = currentMoney + moneyIncrement;
+        const remainingMoneyPlus = moneyPlus - moneyIncrement;
+
+        moneyElement.textContent = updatedMoney.toLocaleString();
+        moneyPlusElement.textContent = `+ ${remainingMoneyPlus.toLocaleString()}`;
+
+        if (percentage < 1) {
+            requestAnimationFrame(animateMoneyTransfer);
+        }
+    }
+
+    doneButton.addEventListener("click", function () {
+        requestAnimationFrame(animateMoneyTransfer);
+    })
+
+</script>
 </body>
 </html>
