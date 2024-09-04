@@ -276,9 +276,9 @@ body{
 }
 .custom-options,
 .custom-select-trigger{
-    font-family: 'SF Pro Text Medium',sans-serif;
-    font-size: 20px;
-    color: #fff;
+    font-family: "SF Pro Text Regular",sans-serif;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 1);
 }
 .custom-option{
     display: block;
