@@ -4,7 +4,7 @@ body{
     margin: 0 auto;
 }
 .vip-bg{
-    background: url("/img/upgrade-card-inner-vip-bg.png") no-repeat center/cover !important;
+    background: url("../img/upgrade-card-inner-vip-bg.png") no-repeat center/cover !important;
 }
 .screen {
     padding: 14px 16px 119px 16px;
