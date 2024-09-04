@@ -128,7 +128,7 @@ body{
     display: flex;
     align-items: center;
 }
-.radio-item input[type="radio"] {
+.radio-item input[type="checkbox"] {
     appearance: none; /* Убираем стандартный вид радио кнопок */
     background: #FFFFFF24;
     box-sizing: border-box;
@@ -140,10 +140,10 @@ body{
     cursor: pointer;
     outline: none;
 }
-.radio-item input[type="radio"]:checked {
+.radio-item input[type="checkbox"]:checked {
     background: #FFFFFF24;
 }
-.radio-item input[type="radio"]:checked::after {
+.radio-item input[type="checkbox"]:checked::after {
     content: '';
     position: absolute;
     top: 50%;
