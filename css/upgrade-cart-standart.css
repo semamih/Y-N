@@ -3,6 +3,9 @@ body{
     max-width: 390px;
     margin: 0 auto;
 }
+.vip-bg{
+    background: url("/img/upgrade-card-inner-vip-bg.png") no-repeat center/cover;
+}
 .screen {
     padding: 14px 16px 119px 16px;
     height: 100%;
