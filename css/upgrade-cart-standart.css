@@ -4,7 +4,7 @@ body{
     margin: 0 auto;
 }
 .screen {
-    padding: 14px 16px 34px 16px;
+    padding: 14px 16px 119px 16px;
     height: 100%;
     max-width: 390px;
     margin: 0 auto;
@@ -16,6 +16,9 @@ body{
     justify-content: center;
 }
 .nav-menu-items {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
     box-sizing: border-box;
     height: 87px;
     padding-top: 4.5px;
@@ -29,6 +32,7 @@ body{
 }
 .nav-menu-items-content{
     max-width: 390px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;

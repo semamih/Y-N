@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/upgrade-cart-standart.css?v=1">
+    <link rel="stylesheet" href="css/upgrade-cart-standart.css?v=6">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 <div class="screen">
     <div class="up-standart-header">
         <h2 class="title">VIP skin</h2>
-        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="close" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M17.75 10.25L10.25 17.75M10.25 10.25L17.75 17.75M26.5 14C26.5 20.9036 20.9036 26.5 14 26.5C7.09644 26.5 1.5 20.9036 1.5 14C1.5 7.09644 7.09644 1.5 14 1.5C20.9036 1.5 26.5 7.09644 26.5 14Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
     </div>
@@ -110,7 +110,13 @@
     </div>
 </div>
 
+<script>
+    let close = document.querySelector(".close");
 
+    close.addEventListener("click", function (){
+        window.location.href = "./upgrade.html";
+    });
+</script>
 
 
 </body>

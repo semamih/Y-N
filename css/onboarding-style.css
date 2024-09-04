@@ -100,14 +100,16 @@ body{
     align-items: center;
     justify-content: center;
 }
-.page-number-nav{
-    width: 338px;
+.page-number-nav {
+    width: 100%;
+    max-width: 338px;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: fixed;
     bottom: 24px;
-    margin: 0 11px 0 11px;
 }
 .screen-2 .page-number-nav{
     margin: 0;
@@ -423,42 +425,32 @@ body{
 }
 
 @media  screen and (max-width: 389px) {
-    .page-number-nav {
-        width: 330px;
-    }
     .page-3 p:nth-child(1) {
         max-width: 250px;
     }
 
 }
-@media  screen and (max-width: 375px) {
-    .page-number-nav {
-        width: 320px;
+
+@media  screen and (max-width: 380px){
+    .map-image img {
+        width: 350px;
+        height: 190px;
     }
+    .map-image{
+        text-align: center;
+    }
+}
+@media  screen and (max-width: 375px) {
     .reward-button {
         max-width: 330px;
         left: calc(50% - 165px);
     }
 
 }
-@media  screen and (max-width: 365px) {
+@media  screen and (max-width: 370px) {
     .page-number-nav {
-        width: 315px;
+        width: 333px;
     }
-
-}
-@media  screen and (max-width: 360px) {
-    .page-number-nav {
-        width: 310px;
-    }
-
-
-}
-@media  screen and (max-width: 355px) {
-    .page-number-nav {
-        width: 305px;
-    }
-
 }
 @media  screen and (max-width: 351px) {
     .page-3 p:nth-child(1) {
@@ -467,9 +459,6 @@ body{
 
 }
 @media  screen and (max-width: 350px) {
-    .page-number-nav {
-        width: 300px;
-    }
     .page-3 p:nth-child(1) {
         font-size: 17px;
     }

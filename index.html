@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <title>loading</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/loading-style.css?v=2">
+    <link rel="stylesheet" href="css/loading-style.css?v=6">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 <div class="container">
     <div class="coin-container">
 <!--        <div class="coin-background"></div>-->
-        <img src="img/Group3637.png" alt="coin" class="coin">
+        <img src="img/Group3637.svg" alt="coin" class="coin">
     </div>
     <div class="loading-bar">
         <div class="percentage" id="percentage">0%</div>
@@ -25,9 +25,9 @@
         let coin = document.querySelector('.coin');
         let percentage = document.querySelector('.percentage');
 
-        const originalSize = 95;
-        const targetSizeCoin = 600;
-        const animationDuration = 5000; // 5 секунд
+        const originalSize = 100;
+        const targetSizeCoin = 500;
+        const animationDuration= 5000;
 
         setTimeout(() => {
             progress.style.width = '100%';

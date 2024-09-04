@@ -19,6 +19,9 @@ body{
     justify-content: center;
 }
 .nav-menu-items {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
     box-sizing: border-box;
     height: 87px;
     padding-top: 4.5px;
@@ -32,6 +35,7 @@ body{
 }
 .nav-menu-items-content{
     max-width: 390px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -85,8 +89,23 @@ body{
     font-size: 25px;
     color: #FFFFFF;
     border-radius: 50px;
-    border: 2px solid #6633D4;
-    /*border-image-source: linear-gradient(270deg, #6633D4 0%, #0039A6 100%);*/
+    position: relative;
+}
+.coinsCount-button::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -1;
+    border-radius: inherit;
+    border: 2px solid transparent;
+    background: linear-gradient(270deg, #6633D4 0%, #0039A6 100%);
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
 }
 .main-info-bar{
     width: 100%;
@@ -138,10 +157,25 @@ body{
     bottom: 111px;
     left: calc(50% - 169px);
 
-
     font-family: 'InterMedium',sans-serif;
     font-size: 20px;
     color: #FFFFFF;
+}
+.farming-start::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -1;
+    border-radius: inherit;
+    border: 2px solid transparent;
+    background: linear-gradient(270deg, #6633D4 0%, #0039A6 100%);
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
 }
 .farming-reward{
     display: flex;
@@ -259,6 +293,10 @@ body{
 .disabled {
     pointer-events: none;
     cursor: not-allowed;
+}
+
+@media  screen and (max-width: 425px){
+
 }
 @media  screen and (max-width: 380px){
     .count {

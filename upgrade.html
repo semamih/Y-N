@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Upgrade</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/upgrade.css?v=3">
+    <link rel="stylesheet" href="css/upgrade.css?v=6">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body class="">
@@ -21,7 +21,7 @@
             <div class="vip type-desactive">VIP</div>
         </div>
         <div class="standart-items">
-            <div class="standart-item open-standart-item">
+            <div class="standart-item open-standart-item standart-ex-item">
                 <div class="standart-item-icon">
                     <img src="img/standart-item-1.svg" alt="">
                 </div>
@@ -148,7 +148,7 @@
             </div>
         </div>
         <div class="vip-items">
-            <div class="vip-item open-vip-item">
+            <div class="vip-item open-vip-item vip-ex-item">
                 <div class="standart-item-icon">
                     <img src="img/vip-item-1.svg" alt="">
                 </div>
@@ -319,6 +319,8 @@
 
     <script>
         window.onload = function() {
+            let vipExItem = document.querySelector(".vip-ex-item");
+            let standartExItem = document.querySelector(".standart-ex-item");
             let vip = document.querySelector(".vip")
             let standartItems = document.querySelector(".standart-items");
             let vipItems = document.querySelector(".vip-items");
@@ -340,6 +342,14 @@
                 standart.classList.remove('type-desactive');
                 vip.classList.add('type-desactive');
                 document.body.classList.remove("bg-2");
+            });
+
+
+            standartExItem.addEventListener("click", function () {
+                window.location.href = "./upgrate-card-standart.html";
+            });
+            vipExItem.addEventListener("click", function () {
+                window.location.href = "./upgrade-cart-vip.html";
             });
         }
 
