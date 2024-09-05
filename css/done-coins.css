@@ -142,6 +142,22 @@ body{
 .done-rep-title{
     margin-bottom: 114px;
 }
+@keyframes coin-animation {
+    0% {
+        transform: translate(0, 0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(43px, -170px) scale(0.3);
+        opacity: 0;
+    }
+}
+
+.coin {
+    animation: none;
+}
+
+
 @media screen and (max-height: 750px ){
     .money{
         margin-bottom: 90px;

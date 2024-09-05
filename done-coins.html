@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Task inner</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/done-coins.css?v=6">
+    <link rel="stylesheet" href="css/done-coins.css?v=7">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -20,7 +20,7 @@
         <span id="money-value">32 122</span>
     </div>
     <div class="money-plus">
-        <img src="img/coin3.png" alt="" width="80px" height="80px">
+        <img src="img/coin3.png" alt="" width="80px" height="80px" class="coin">
         <span id="money-plus-value">+ 120 000</span>
     </div>
     <div class="done-button">
@@ -104,6 +104,8 @@
     const moneyElement = document.getElementById('money-value');
     const moneyPlusElement = document.getElementById('money-plus-value');
     const doneButton = document.querySelector(".done-button");
+    const coin = document.querySelector(".coin");
+    const coinPlus = document.querySelector(".money-plus");
 
     let currentMoney = 32122;
     let moneyPlus = 120000;
@@ -131,6 +133,11 @@
 
     doneButton.addEventListener("click", function () {
         requestAnimationFrame(animateMoneyTransfer);
+        coin.style.animation = "coin-animation 0.2s linear infinite";
+        setTimeout(() => {
+            coin.style.animation = "none";
+            coinPlus.style.marginRight = "5px";
+        }, 5000);
     })
 
 </script>
