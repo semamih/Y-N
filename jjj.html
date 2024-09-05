@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Редактирование записи</title>
+    <style>
+        /* styles.css */
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            margin: 50px auto;
+        }
+
+        .display-text {
+            font-size: 18px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+
+        .edit-input {
+            font-size: 18px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="display-text" id="displayText">Это запись для редактирования</div>
+    <input type="text" id="editInput" class="edit-input" style="display: none;">
+    <button id="editButton">Редактировать</button>
+</div>
+
+<script>
+    // script.js
+    document.addEventListener("DOMContentLoaded", function() {
+        const displayText = document.getElementById("displayText");
+        const editInput = document.getElementById("editInput");
+        const editButton = document.getElementById("editButton");
+
+        editButton.addEventListener("click", function() {
+            // Показываем поле ввода и скрываем отображаемый текст
+            editInput.value = displayText.textContent;
+            displayText.style.display = "none";
+            editInput.style.display = "block";
+            editInput.focus(); // Автоматически фокусируемся на поле ввода, показывая клавиатуру
+
+            // Сохранение изменений при потере фокуса или нажатии Enter
+            editInput.addEventListener("blur", function() {
+                saveChanges();
+            });
+
+            editInput.addEventListener("keydown", function(event) {
+                if (event.key === "Enter") {
+                    saveChanges();
+                }
+            });
+
+            function saveChanges() {
+                // Сохраняем изменения и возвращаем вид текстового поля
+                displayText.textContent = editInput.value;
+                editInput.style.display = "none";
+                displayText.style.display = "block";
+            }
+        });
+    });
+
+</script>
+</body>
+</html>

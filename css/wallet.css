@@ -52,6 +52,7 @@ body{
 .wal-header{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     column-gap: 8px;
 
     font-family: 'InterBold',sans-serif;
@@ -59,6 +60,67 @@ body{
     color: #FFFFFF;
     margin-bottom: 24px;
 }
+.user-name-save-button{
+    visibility: hidden;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 16px;
+    width: 175px;
+    height: 60px;
+    background: #000000;
+    border: 1.5px solid #3A3A3A;
+    backdrop-filter: blur(40px);
+    border-radius: 50px;
+    font-family: 'SF Pro Text Medium',sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+.wal-header-name{
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    width: 175px;
+}
+.edit-input{
+    display: none;
+    border: none;
+    padding: 18px 16px;
+    width: 175px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.14);
+    backdrop-filter: blur(40px);
+    border-radius: 50px;
+    outline: none;
+
+    font-family: 'SF Pro Text Medium',sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.close-edit {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    display: none;
+}
+.input-container.editing .close-edit {
+    display: block;
+}
+.input-container {
+    position: relative;
+    display: inline-block;
+}
+
+
+
+
+
 .wal-connected-title{
     display: flex;
     align-items: center;
@@ -230,7 +292,10 @@ body{
 
 
 
-
+.wal-selects{
+    display: flex;
+    justify-content: space-between;
+}
 .wal-selects-button,
 .wal-selects-button2{
     display: none;
@@ -350,18 +415,42 @@ body{
 }
 
 
-@media screen and (max-width : 390px) {
+@media screen and (max-width : 389px) {
     .custom-select,
-    .custom-select2{
+    .custom-select2,
+    .user-name-save-button,
+    .wal-header-name,
+    .edit-input{
         width: 169px;
     }
     .custom-options, .custom-options2 {
         width: 169px;
     }
 }
-
-
-
+@media screen and (max-width : 375px) {
+    .custom-select,
+    .custom-select2,
+    .user-name-save-button,
+    .wal-header-name,
+    .edit-input{
+        width: 163px;
+    }
+    .custom-options, .custom-options2 {
+        width: 163px;
+    }
+}
+@media screen and (max-width : 360px) {
+    .custom-select,
+    .custom-select2,
+    .user-name-save-button,
+    .wal-header-name,
+    .edit-input{
+        width: 155px;
+    }
+    .custom-options, .custom-options2 {
+        width: 155px;
+    }
+}
 
 
 
