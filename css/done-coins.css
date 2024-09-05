@@ -148,7 +148,7 @@ body{
         opacity: 1;
     }
     100% {
-        transform: translate(43px, -170px) scale(0.3);
+        transform: translate(7px, -170px) scale(0.3);
         opacity: 0;
     }
 }

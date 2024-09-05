@@ -21,7 +21,7 @@
     </div>
     <div class="money-plus">
         <img src="img/coin3.png" alt="" width="80px" height="80px" class="coin">
-        <span id="money-plus-value">+ 50 000</span>
+        <span id="money-plus-value">+ 50</span>
     </div>
     <div class="done-button">
         Claim Reward
@@ -108,7 +108,7 @@
     const coinPlus = document.querySelector(".money-plus");
 
     let currentMoney = 32122;
-    let moneyPlus = 50000;
+    let moneyPlus = 50;
     let duration = 5000;
     let startTime = null;
 
@@ -133,7 +133,7 @@
 
     doneButton.addEventListener("click", function () {
         requestAnimationFrame(animateMoneyTransfer);
-        coin.style.animation = "coin-animation 0.3s linear infinite";
+        coin.style.animation = "coin-animation 0.5s linear infinite";
         setTimeout(() => {
             coin.style.animation = "none";
             coinPlus.style.marginRight = "5px";
